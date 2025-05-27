@@ -12,10 +12,7 @@ Predict the outcome (win vs. non-win) of Premier League matches using historical
 4. [Modeling](#modeling)  
 5. [Results](#results)  
 6. [Usage](#usage)  
-7. [Repository Structure](#repository-structure)  
-8. [Future Work](#future-work)  
-9. [Environment & Installation](#environment--installation)  
-10. [License](#license)  
+7. [Future Work](#future-work)  
 
 ---
 
@@ -69,4 +66,30 @@ This project scrapes match-level statistics for all Premier League seasons, buil
       random_state=1
   )
   rf.fit(X_train, y_train)
+  
+---
+
+## Results
+
+Accuracy	66.7%
+
+Precision	62.5%
+
+## Usage
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/<your-username>/premier-league-score-predictor.git
+   cd premier-league-score-predictor
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   
+## Future Work
+
+- Hyperparameter tuning (GridSearch, Bayesian optimization)  
+- Additional features: form streaks, head-to-head history, betting odds  
+- Experiment with other classifiers (XGBoost, LightGBM)  
+- Deploy as an API or web app  
+- Integrate AI agents to automate data scraping, feature engineering, and model optimization  
 
